@@ -38,14 +38,11 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const Center(
-        child: Text(
-          '青い大きめの大文字です',
-          style: TextStyle(
-          color: Colors.blue,
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
-          ),
+      body: Center(
+        child: Image.network(
+          'https://nzigen.com/wordpress/wp-content/uploads/2021/05/jumper-chick.png',
+          width: 400,
+          height: 400,
         ),
       ),
     );
