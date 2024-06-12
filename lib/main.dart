@@ -40,9 +40,12 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: const Center(
         child: Text(
-          'hello world.hello world.hello world.hello world.hello world.hello world.hello world.hello world.hello world.hello world.hello world.hello world.hello world.hello world.hello world.hello world.hello world.',
-          maxLines: 2,
-          overflow: TextOverflow.ellipsis,
+          '青い大きめの大文字です',
+          style: TextStyle(
+          color: Colors.blue,
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );
