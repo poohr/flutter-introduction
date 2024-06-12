@@ -38,13 +38,9 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Container(
-          color: Colors.blue,
-          child: const Padding(
-            padding: EdgeInsets.symmetric(vertical: 24, horizontal: 20),
-            child: Text(
-                '長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！'),
-          )),
+      body: const ColoredBox(
+          color: Colors.red,
+          child: Text('こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！')),
     );
   }
 }
