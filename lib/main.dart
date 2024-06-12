@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
           color: Colors.blue,
           child: const Padding(
-            padding: EdgeInsets.all(24.0),
+            padding: EdgeInsets.symmetric(vertical: 24, horizontal: 20),
             child: Text(
                 '長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！長い文章をいれてみましょう！'),
           )),
