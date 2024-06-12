@@ -43,6 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
           'https://nzigen.com/wordpress/wp-content/uploads/2021/05/jumper-chick.png',
           width: 400,
           height: 400,
+          
         ),
       ),
     );
