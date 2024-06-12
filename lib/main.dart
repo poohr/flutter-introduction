@@ -38,9 +38,17 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const ColoredBox(
-          color: Colors.red,
-          child: Text('こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！')),
+      body: Column(
+        children: [
+          const ColoredBox(
+              color: Colors.red,
+              child: Text('こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！')),
+          const ColoredBox(
+              color: Color.fromARGB(255, 255, 0, 0),
+              child: Text('こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！こんにちわ！')),
+
+        ],
+      ),
     );
   }
 }
