@@ -34,14 +34,33 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body: Align(
-        alignment: Alignment.bottomLeft,
-        child: Text('おはよう！おはよう！おはよう！おはよう！'),
-      )
-    );
+        appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          title: Text(widget.title),
+        ),
+        body: Center(
+          child: TextButton(
+            onPressed: () {
+              //   ここに押したときの処理を書きます
+              print('押しました');
+              showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      title: Text('お知らせ'),
+                      content: Text('アラートダイアログです！'),
+                      actions: [
+                        TextButton(
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                            child: Text('Close'))
+                      ],
+                    );
+                  });
+            },
+            child: const Text('押してね'),
+          ),
+        ));
   }
 }
